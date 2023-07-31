@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoría Inmobiliaria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Consultoría Inmobiliaria</h1>
+    </header>
+    <main class="container mt-4">
+        <!-- Inicio de la lista de propiedades -->
+        <div class="row">
+<!-- Propiedad 1 -->
+<div class="col-md-4">
+    <div class="card">
+        <!-- Carrusel de imágenes de la propiedad -->
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="CS AB alias/cs-ab%201.jpeg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="CS AB alias/cs-ab%202.jpeg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="CS AB alias/cs-ab%203.jpeg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Propiedad 1</h5>
+            <p class="card-text">Precio: $1,000,000 - Tamaño: 200 m2 - Recámaras: 3</p>
+            <!-- Mapa de la ubicación de la propiedad -->
+            <div id="map1" style="height: 200px;"></div>
+        </div>
+    </div>
+</div>
+<!-- Propiedad 2 -->
+<div class="col-md-4">
+    <div class="card">
+        <!-- Carrusel de imágenes de la propiedad -->
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="CS AB alias/cs-ab-4.jpeg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="CS AB alias/cs-ab-5.jpeg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="CS AB alias/cs-ab-6.jpeg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Propiedad 2</h5>
+            <p class="card-text">Precio: $1,000,000 - Tamaño: 200 m2 - Recámaras: 3</p>
+            <!-- Mapa de la ubicación de la propiedad -->
+            <div id="map2" style="height: 200px;"></div>
+        </div>
+    </div>
+</div>
+<!-- Propiedad 3 -->
+<div class="col-md-4">
+    <div class="card">
+        <!-- Carrusel de imágenes de la propiedad -->
+        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="CS AB alias/cs-ab-7.jpeg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="CS AB alias/cs-ab-8.jpeg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="CS AB alias/cs-ab-9.jpeg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Propiedad 3</h5>
+            <p class="card-text">Precio: $1,000,000 - Tamaño: 200 m2 - Recámaras: 3</p>
+            <!-- Mapa de la ubicación de la propiedad -->
+            <div id="map3" style="height: 200px;"></div>
+        </div>
+    </div>
+</div>
+</div> <!-- Cierre de la lista de propiedades -->
+</main>
+<footer>
+    <p>&copy; 2023 Consultoría Inmobiliaria</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script>
+    function initMap() {
+        var options = {
+            zoom: 14,
+            center: {lat: 20.6736, lng: -103.3438}
+        };
+        var map1 = new google.maps.Map(document.getElementById('map1'), options);
+        var map2 = new google.maps.Map(document.getElementById('map2'), options);
+        var map3 = new google.maps.Map(document.getElementById('map3'), options);
+    }
+    initMap();
+</script>
+</body>
+</html>
